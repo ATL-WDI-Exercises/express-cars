@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample HTML5 Page</title>
+  <meta name="description" content="Sample HTML Page">
+  <meta name="author" content="Mike Hopper">
+  <link rel="stylesheet" type="text/css" href="/styles/app.css">
+</head>
+
+<body>
+
+  <a href="/">Home</a>
+  <a href="/cars">Cars</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+
+  <h1>Cars</h1>
+  <a href="/cars/new">New Car</a>
+  <ul>
+    <% cars.forEach(function(car) { %>
+      <li><a href="/cars/<%= car.id %>"><%= car.toString() %></a></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

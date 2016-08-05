@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample HTML5 Page</title>
+  <meta name="description" content="Sample HTML Page">
+  <meta name="author" content="Mike Hopper">
+  <link rel="stylesheet" type="text/css" href="/styles/app.css">
+</head>
+
+<body>
+
+  <a href="/">Home</a>
+  <a href="/cars">Cars</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+
+  <h1>New Car</h1>
+
+  <form method="post" action="/cars">
+    <label for="make">Make</label>
+    <input type="text" name="make">
+    <br/>
+
+    <label for="model">Model</label>
+    <input type="text" name="model">
+    <br/>
+
+    <label for="year">Year</label>
+    <input type="number" name="year">
+    <br/>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
